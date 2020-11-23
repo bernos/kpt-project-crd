@@ -1,0 +1,11 @@
+apiVersion: example.com/v1alpha1
+kind: ConfigMap
+metadata:
+  name: my-project
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: ./app-project
+spec:
+  description: |
+    This is the description of my project
